@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Slabo+27px&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+html {
+    font-size: 16px; 
+    line-height: 1.4rem;
+    background-image: url('img/bg.jpg');
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+img {
+	width: 100%;
+    max-width: 100%;
+}
+
+header h1 {
+    padding-left: 50px;
+    color: gray;
+}
+
+h1 {
+    font-family: 'Slabo 27px', serif !important;
+    color:rgb(83, 82, 82);
+    font-size: 40px;
+    
+}
+
+h2{
+    font-family: 'Slabo 27px', serif !important;
+    font-size: 35px;
+}
+
+h3{
+    font-family: 'Slabo 27px', serif !important;
+    font-size: 30px;
+    color:rgb(177, 176, 176);
+    padding-left: 75px;
+    font-weight: lighter;
+
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+li a:hover {
+    border-bottom: solid 4px red;
+}
+
+
+.container {
+    padding:  5px 30px 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.twoThirds {
+    width:66.6%;
+}
+.oneThird {
+    width: 33.3%;
+}
+.center {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+blockquote {
+    font-size: 20px;
+}
+
+
+.hr {
+    border-color: red;
+}
+
+footer {
+    margin: 4rem 0rem;
+    padding: 2rem 0rem;
+    border-top: 1px solid #ccc;
+    font-size: 5px;
+    padding-left: 75px;
+    
+}
+footer p{
+    font-size: 12px;
+}
