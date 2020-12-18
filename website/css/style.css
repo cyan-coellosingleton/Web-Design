@@ -14,30 +14,36 @@ header {
 }
 header h1 {
 	clear: both;
-	padding-left: 25px;
+	float: left;
+	padding-left: 60px;
 	margin-bottom: 0px;
-	font-size: 35px;
+	font-size: 40px;
 	color: white;
 	font-family: 'Times New Roman', Times, serif;
 }
+
 header blockquote	{
 	font-size: 25px;
 	font-style: italic;
-	float:center;
-	padding-left: 655px;
+	clear:both;
+	float:left;
 	padding-top: 15px;
+	padding-left: 50px;
 	margin-top: 0px;
-	font-size: 20px;
+	margin-bottom: 45px;
+	font-size: 15px;
 	color:white;
 
 }
+
 h1 {
 	font-size: 48px;
 	text-align: center	
 }
 h2 {
 	font-size: 37px;
-	text-align: center;
+	padding-top: 75px;
+	text-align: Center;
 	font-family: 'Times New Roman', Times, serif;
 	font-style: italic;
 }
@@ -53,6 +59,7 @@ article p {
 	color: black;
 	column-count:2;
 	}
+
 #main {
 		width: 100%;
 		padding-left: 150px;
@@ -76,6 +83,19 @@ article p {
 #navigation {
 	font-size: 16px;	
 	line-height: 1.4em;
+}
+#writing h3{
+	font-size: 25px;
+	text-align: center;
+	font-style: italic;
+
+}
+#writing p{
+	font-size: 15px;
+	text-align: left;
+	column-count: 3;
+
+
 }
 
 nav ul {
@@ -109,8 +129,12 @@ nav ul a:link {
 	border-bottom: 2px solid #000000;
 }
 footer	{
-	clear: both;
-	padding: 25px;
+	clear:both;
+	margin: 4rem 0rem;
+    padding: 2rem 0rem;
+    border-top: 1px solid #ccc;
+    font-size: 15px;
+    padding-left: 75px;
 }
 footer nav{
 	text-align: center;
@@ -126,8 +150,8 @@ footer nav{
 	padding-bottom: 25px;
 }
 .article-thumbs img {
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 250px;
 	border-radius: 50%;
 	float: center;
 	
@@ -138,14 +162,25 @@ img {
 	display: block;
 }
 .article-thumbs p{
+	padding-left: 65px;
 	text-align: center;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 25px;
 }
-.article-thumbs p a:link
+.article-thumbs a:link
 {
-	color: black;
+	color:white;
 	background: white;
 	text-decoration: none;
 
 }
+
+  header a{
+	  text-decoration: none;
+	  
+  }
+  #writing img{
+	  margin-left: 30%;
+	  height: 300px;
+	  width: 400px;
+  }
