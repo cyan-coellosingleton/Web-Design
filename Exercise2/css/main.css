@@ -20,7 +20,6 @@ footer:nth-child(3){
     color:#4F4846;
 }
 p>img{
-	padding-left: 600px;
     width: calc(250px);
     height: calc(225px);
 }
