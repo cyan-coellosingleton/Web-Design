@@ -1,10 +1,10 @@
-header{
-    text-align: center;
+header h1{
     font-style: italic;
     color: rgba(253, 248, 245, 1);
-    font-size: 2vw;
-    border: 5px solid rgba(221, 175, 148, 1);   
+    font-size: 4vw;
+    text-align: left;
 }
+
 body{
     background-color: hsla(22, 47%, 83%, 1);
 }
@@ -28,15 +28,69 @@ p:first-child{
     font-size: 1.5vw;
     color:#4F4846;
 }
-nav a li:link, 
-nav a li:visited{
-	text-decoration: none;
-}
-nav a li:hover,
-nav a li:focus,
-nav a li:active{
-	color: rgba(253, 248, 245, 1) ;
-}
+
 p::first-letter{
 	font-size: 150%;
+}
+
+
+
+
+
+.main-nav,
+.drop-nav {
+  background: rgba(221, 175, 148, 1);
+}
+.main-nav {
+  float:left;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+  .main-nav > li {
+    float: left;
+    border-left: solid 3px hsla(22, 47%, 83%, 1);
+  }
+  .main-nav li:first-child {
+    border-left: none;
+  }
+  .main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 30px; 
+    text-decoration: none;
+  }
+.dropdown,
+.flyout {
+  position: relative;
+}
+.dropdown:after {
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 12%;
+}
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none;
+}
+.drop-nav li {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block;
+}
+.flyout-nav {
+  left: 100%;
+  top: 0;
+}
+.flyout:hover a,
+.flyout-nav {
+  background: rgba(221, 175, 148, 1);
+}
+ul {
+    list-style-type:circle;
+    color:white;
 }
