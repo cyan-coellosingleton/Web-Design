@@ -12,26 +12,75 @@
             <h1><a href="index.html">Cyan Coello<br> Personal Portfolio</a>
           </header>
           <main id="page-content" class="container">
-            <div id="navigation">
-                <nav id="main-nav">
-            <ul>
-                <li><a href="photoshoots.html">Photoshoots</a></li>
-                <li><a href="CreativeWriting.html">Creative Writing</a></li>
-                <li><a href="VideoGames.html">Video Games</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="connectme.html">Contact Me</a></li>
-            </ul>
-        </nav>
+            <nav id="main-nav"></nav>
+                <ul class="main-nav">
+                    <li><a href="photoshoots.html">Photoshoots</a></li>
+                    <li><a href="CreativeWriting.html">Creative Writing</a></li>
+                    <li class="dropdown">
+                        <a href="VideoGames.html">Video Games</a>
+                        <ul class="drop-nav">
+                          <li><a href="Breakfast.html">Action Games</a></li>
+                          <li><a href="lunch.html">Classic Games</a></li>
+                          <li class="flyout">
+                            <a href="dinner.html">Cozy Games</a>
+                            <ul class="flyout-nav">
+                              <li><a href="#">Animal Crossing New Horizons</a></li>
+                              <li><a href="#">Stardew Valley</a></li>
+                              <li><a href="#">Hollow Knight</a></li>
+                            </ul>
+                        </ul>
+                      </li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="connectme.html">Contact Me</a></li>
+                </ul>
         </div>
       
         <article>
-            <h2>Blog</h2>
+        </br>
+      </br>
+            <h2 style="padding-top:20px;">Blog</h2>
+        <h2>Post #1</h2>
             <p>As I was preparing for an interview for an internship recently, I stumbled upon this youtube video that I found to be very helpful in explaining 
                 the basics of Data Structures and Algorithms. A topic that is very common for programming interviews!
             </p>
             <iframe class="center" width="420" height="315"
             src="https://www.youtube.com/embed/oz9cEqFynHU">
             </iframe>
+
+            <h2>Post #2</h2>
+            <p> Recently I was curious about people's feelings on the basic types of ice cream flavors. Here are some of my findings!
+            </p>
+            <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="head"></th>
+                    <th class="head">Like</th>
+                    <th class="head">Neutral</th>
+                    <th class="head">Dislike</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="vanilla">Vanilla</td>
+                    <td class="vanilla">40</td>
+                    <td class="vanilla">112</td>
+                    <td class="vanilla">48</td>
+                  </tr>
+                  <tr>
+                    <td class="chocolate">Chocolate</td>
+                    <td class="chocolate">110</td>
+                    <td class="chocolate">47</td>
+                    <td class="chocolate">43</td>
+                  </tr>
+                  <tr>
+                    <td class="strawberry">Strawberry</td>
+                    <td class="strawberry">98</td>
+                    <td class="strawberry">40</td>
+                    <td class="strawberry">62</td>
+                  </tr>
+                </tbody>
+                </table>
+                
 
          <footer id=footer>
              <h3>Want to connect?</h3>

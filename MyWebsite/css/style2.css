@@ -36,7 +36,6 @@ h1 {
 }
 h2 {
 	font-size: 30px;
-	padding-top: 75px;
 	text-align: Center;
 	font-family: 'Baskervville', serif;
 	font-weight: lighter;
@@ -67,17 +66,17 @@ p{
 	line-height: 1.4em;
 }
 
-nav ul {
+ul {
 	list-style-type: none;
 	margin: 0px;
 }
-nav ul a,
-nav ul a:visited,
-nav ul a:link {
+ul a,
+ul a:visited,
+ul a:link {
 	text-decoration: none;
 	color: #5C5F58;
 }
-#main-nav ul li a,
+/* #main-nav ul li a,
 #main-nav ul li a:visited {
 	width: 20%;
 	padding: 5px;
@@ -85,7 +84,7 @@ nav ul a:link {
 	float: left;
 	text-align: center;
 	background-color:#DCE1E3;
-	color: #5C5F58;
+	color: #5C5F58;	
 	border-top: 2px solid #5C5F58;
 	border-bottom: 2px solid #5C5F58;
 }
@@ -95,7 +94,7 @@ nav ul a:link {
 	color: #B73225;
 	border-top: 2px solid #B73225;
 	border-bottom: 2px solid #B73225;
-}
+} */
 
 
 #writing h3{
@@ -190,29 +189,288 @@ a:hover{
     margin:0px;
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #5C5F58; 
-    border-radius: 4px;
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
+
+.contact-form-header {
+  text-align: center;
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px;
+}
+
+.contact-form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.contact-form {
+  background-color: #f6f7f88f;
+  border: 1px solid #d6d9dcc2;
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 0px 300px 40px 0;
+  float:right;
+}
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; 
+    margin-bottom: 20px;
   }
+  .form-row input[type='text']
+  .form-row input[type='email'] {
+    width: 250px;
+    height: initial;
+    background-color: #FFFFFF;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+border: 1px solid #D55C5F;
+color: #D55C5F;
+box-shadow: none; /* Remove default red glow in Firefox */
+}
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
   
-  input[type=submit] {
-    background-color: #5C5F58; 
-    color: #DCE1E3; 
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+  float: left;
+}
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;            /* This won't work in Chrome or Safari */
+  -webkit-appearance: none;   /* This will make it work */
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.form-row .checkbox-label {
+  margin-bottom: 0;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #B73225;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #B73225;
+}
+
+.form-row button:active {
+  background-color: #B73225;
+}
+@media only screen and (min-width: 700px) {
+  .contact-form-header,
+  .contact-form {
+    width: 600px;
   }
-  input[type=submit]:hover {
-    background-color: #B73225;
+  .form-row input[type='text'],
+  .form-row input[type='email'],    /* Add */
+  .form-row select,                 /* These */
+  .form-row textarea {              /* Selectors */
+    width: 250px;
+    height: initial;
   }
+  .legacy-form-row {
+      margin-bottom: 10px;
+    }
+    .legacy-form-row legend {
+      width: 120px;
+      text-align: right;
+      padding-right: 20px;
+    }
+    .legacy-form-row legend {
+      float: left;
+    }
+    .form-row .instructions {
+      margin-left: 120px;
+    }
+    .form-row .checkbox-label {
+      margin-left: 120px;
+      width: auto;
+    }
+    .form-row button {
+      margin-left: 120px;
+    }
+
+
+
+}
   .center { 
       margin-left: 350px;
     }
+
+  .tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    float:right;
+    margin-right: 40%;
+    margin-bottom: 30px;
+  }
+  .tg td{
+    border-style:solid;
+    border-width:3px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+  }
+  .tg th{
+    border-style:solid;
+    border-width:3px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+  }
+  .tg .vanilla{
+    background-color:white;
+    border-color:white;
+    text-align:left;
+    vertical-align:top}
+
+  .tg .head{
+    background-color:black;
+    border-color:white;
+    color:white;
+    text-align:left;
+    vertical-align:top;
+    font-weight: bold;
+  }
+  .tg .chocolate{
+    background-color:brown;
+    border-color:white;
+    text-align:left;
+    vertical-align:top
+  }
+  .tg .strawberry{
+    background-color:pink;
+    border-color:white;
+    text-align:left;
+    vertical-align:top
+  }
   
+  .main-nav {
+    float:left;
+    border-radius: 4px;
+    margin-top: 8px;
+    border-top: 2px solid #5C5F58;
+    border-bottom: 2px solid #5C5F58;
+    float:right;
+    margin-right: 250px;
+    
+    }
+    .main-nav > li {
+      float: left;
+    }
+    .main-nav li:first-child {
+      border-left: none;
+    }
+    .main-nav a {
+      color: #fff;
+      display: block;
+      padding: 10px 30px; 
+      text-decoration: none;
+    }
+    .dropdown,
+    .flyout {
+    position: relative;
+    }
+    .dropdown:after {
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+    }
+    .drop-nav,
+    .flyout-nav {
+    position: absolute;
+    display: none;
+    background: white;
+    }
+    .drop-nav li {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+    .dropdown:hover > .drop-nav,
+    .flyout:hover > .flyout-nav {
+    display: block;
+    }
+    .flyout-nav {
+    left: 100%;
+    top: 0;
+    }
+    .flyout:hover a,
+    .flyout-nav {
+    background: white;
+    }
