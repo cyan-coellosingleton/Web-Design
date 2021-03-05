@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Pacifico&display=swap');
+* {
+	box-sizing: border-box;
+}
+/* header{
+	border-style: dashed;
+	border-color: #3C1874;
+	padding: 5px;
+	border-width: 5px;
+} */
+header h1{
+	font-family:'Pacifico', cursive;
+	letter-spacing: 3px;
+	font-size: 50px;
+	text-align: center;
+	padding:0px;
+	margin:0px;
+	font-weight: lighter;
+	color: #932432;
+
+}
+header h2{
+	letter-spacing: 20px;
+	font-size: 15px;
+	text-align: center;
+	padding:0px;
+	margin:0px;
+	font-family:'Oswald', sans-serif;
+	color:#3C1874;
+}
+h2{
+	font-family:'Pacifico', cursive;
+	letter-spacing: 3px;
+	font-size: 30px;
+	text-align: center;
+	padding:0px;
+	margin:0px;
+	font-weight: lighter;
+	color: #932432;
+}
+body{
+    background-color: #F3F3F3;
+}
+ul {
+	list-style-type: none;
+	margin-left:480px;
+	
+}
+ul a,
+ul a:visited,
+ul a:link {
+	text-decoration: none;
+}
+li{
+	display: inline;
+}
+#main-nav ul li a,
+#main-nav ul li a:visited {
+	font-family:'Oswald', sans-serif;
+	letter-spacing: 3px;
+	font-size: 20px;
+	padding:10px;
+	text-align: center;
+	background-color:#F3F3F3;
+	color: #3C1874;	
+}
+#main-nav ul li a:hover,
+#main-nav ul li a:focus,
+#main-nav ul li a:active {
+	background-color:#3C1874;
+	color: #F3F3F3;	
+} 
+hr{
+	width:50%;
+	border-bottom: 3px solid #3C1874;
+}
+body h1{
+	font-family:'Pacifico', cursive;
+	font-size: 40px;
+	text-align: center;
+	font-weight: lighter;
+	color: #932432;
+}
+.profile-picture img{
+	margin-left: 520px;
+	width: 30%;
+	height: 50%;
+}
+p{
+	text-align: center;
+	font-family:'Oswald', sans-serif;
+	font-weight: bold;
+	color:#283747;
+	letter-spacing: 3px;
+}
+footer{
+	text-align: center;
+    font-size: 25px;
+    padding-left: 75px;
+	font-family:'Oswald', sans-serif;
+	color:#3C1874;
+	font-weight: bold;
+}
+footer nav{
+	text-align: center;
+}
+.fa{
+	text-decoration: none;
+}
+.fa:hover {
+	opacity: 0.5;
+	color:#DE354C;
+}
+  .fa-facebook {
+	color: #3C1874;
+  }
+  .fa-twitter {
+	color: #3C1874;
+  }
+  .fa-instagram {
+	color: #3C1874;
+  }
+  .contact-form {
+	background-color: #932432;
+	border: 1px solid white;
+	border-radius: 3px;
+	width: 80%;
+	padding: 50px;
+	margin-left:470px;
+  }
+  .form-row {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start; 
+	margin-bottom: 20px;
+  }
+  .form-row input[type='text'] {
+	background-color: #FFFFFF;
+	border: 1px solid white;
+	border-radius: 3px;
+	width: 100%;
+	padding: 7px;
+	font-size: 14px;
+  }
+  
+.form-row label {
+	margin-bottom: 15px;
+	font-family:'Oswald', sans-serif;
+	color:white;
+  }
+.form-row input[type='text']
+.form-row input[type='email'] {
+	width: 250px;
+	height: initial;
+	background-color: #FFFFFF;
+}
+.form-row label {
+	text-align: right;
+	width: 120px;
+	margin-top: 7px;
+	padding-right: 20px;
+}  
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+	border: 1px solid #D55C5F;
+	color: #D55C5F;
+  	box-shadow: none; 
+}
+.form-row textarea {
+	font-family:'Oswald', sans-serif;
+	font-size: 14px;
+	border: 1px solid #D6D9DC;
+	border-radius: 3px;
+	min-height: 200px;
+	margin-bottom: 10px;
+	padding: 7px;
+	resize: none;
+} 
+.form-row .instructions {
+	color: white;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.form-row button {
+	font-size: 16px;
+	font-weight: bold;
+	color: #B73225;
+	background-color: white;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 40px;
+	cursor: pointer;
+} 
+.form-row button:hover {
+	background-color: #3C1874;
+	color:white;
+}
+.form-row button:active {
+	background-color: #3C1874;
+	color:white;
+}
+  @media only screen and (min-width: 700px) {
+	.contact-form-header,
+	.contact-form {
+	  width: 600px;
+	}
+	.form-row input[type='text'],
+	.form-row input[type='email'],    
+	.form-row select,                 
+	.form-row textarea {              
+	  width: 250px;
+	  height: initial;
+	}
+	.legacy-form-row {
+		margin-bottom: 10px;
+	  }
+	  .legacy-form-row legend {
+		width: 120px;
+		text-align: right;
+		padding-right: 20px;
+	  }
+	  .legacy-form-row legend {
+		float: left;
+	  }
+	  .form-row .instructions {
+		margin-left: 120px;
+	  }
+	  .form-row button {
+		margin-left: 120px;
+	  }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
