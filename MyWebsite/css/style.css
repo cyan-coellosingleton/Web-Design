@@ -95,41 +95,6 @@ article p {
   height: 50%;
   padding: 20px;
 }
-
-#navigation {
-	font-size: 16px;	
-	line-height: 1.4em;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0px;
-}
-ul a,
-ul a:visited,
-ul a:link {
-	text-decoration: none;
-	color: #5C5F58;
-}
-/* #main-nav ul li a,
-#main-nav ul li a:visited {
-	width: 20%;
-	padding: 5px;
-	display: block;
-	float: left;
-	text-align: center;
-	background-color:#DCE1E3;
-	color: #5C5F58;	
-	border-top: 2px solid #5C5F58;
-	border-bottom: 2px solid #5C5F58;
-}
-#main-nav ul li a:hover,
-#main-nav ul li a:focus,
-#main-nav ul li a:active {
-	color: #B73225;
-	border-top: 2px solid #B73225;
-	border-bottom: 2px solid #B73225;
-} */
 footer	{
 	clear:both;
 	margin: 4rem 0rem;
@@ -171,69 +136,68 @@ footer nav{
   .fa-instagram {
 	color: #5C5F58;
   }
-  
+.mainmenu ul {
+	float: left;
+	width: 100%;
+	list-style: none;
+	color:#5C5F58;
+	background: #DCE1E3;
+	padding-left:0px;
+	border: solid #5C5F58;
+	border-width: 2px 0;
+	margin: 0 0 1em 0;
+}
+.mainmenu a, 
+.mainmenu a:visited {
+	display: block;
+	font-family:'Assistant', sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	color: #5C5F58;
+	text-decoration: none;
+	padding: 1em 1em;
+}
+.mainmenu a:hover{
+	color:#B73225;
+}
 
-  .main-nav {
+.mainmenu ul li {
 	float:left;
-	border-radius: 4px;
-	margin-top: 8px;
-	border-top: 2px solid #5C5F58;
-	border-bottom: 2px solid #5C5F58;
-	float:right;
-	margin-right: 200px;
-  }
-	.main-nav > li {
-	  float: left;
-	}
-	.main-nav li:first-child {
-	  border-left: none;
-	}
-	.main-nav a {
-	  color: #fff;
-	  display: block;
-	  padding: 10px 30px; 
-	  text-decoration: none;
-	}
-  .dropdown,
-  .flyout {
-	position: relative;
-  }
-  .dropdown:after {
-	font-size: .5em;
-	display: block;
+}
+	
+.mainmenu li ul {
 	position: absolute;
-	top: 38%;
-	right: 12%;
-  }
-  .drop-nav,
-  .flyout-nav {
-	position: absolute;
-	display: none;
-	background: white;
-  }
-  .drop-nav li {
-	border-bottom: 1px solid rgba(255,255,255,.2);
-  }
-  .dropdown:hover > .drop-nav,
-  .flyout:hover > .flyout-nav {
-	display: block;
-  }
-  .flyout-nav {
-	left: 100%;
-	top: 0;
-  }
-  .flyout:hover a,
-  .flyout-nav {
-	background: white;
-  }
+	height: auto;
+	width:15em;	
+	border-width: 1px;
+	margin: 0;
+}
 
-  
+.mainmenu li li {
+	width:15em ;
+}
 
-  a {
-	 color: white;
-	  text-decoration: none;
-	 }
+.mainmenu li ul ul {
+	margin: -3em 0 0 14em;
+}
+
+.dropdown, 
+.mainmenu li:hover ul ul
+{
+	left: -999em;
+}
+
+.mainmenu li:hover>.dropdown  
+{
+	left: auto;
+}
   
+a{
+	color:white;
+}
+html {
+	scroll-behavior: smooth;
+   }
   .arrow {
 	text-align: center;
 	padding-top: 50px;
