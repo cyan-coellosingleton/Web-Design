@@ -28,19 +28,19 @@
                   </a>
                   <input type="checkbox" id="sm1">
                   <ul class="sub-menu">
-                    <li><a href="#">Horror</a></li>
-                    <li><a href="#">Poetry
+                    <li><a href="horror.html">Horror</a></li>
+                    <li><a href="poetry.html">Poetry
                         <span class="drop-icon">▾</span>
                         <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
                       </a>
                       <input type="checkbox" id="sm2">
                       <ul class="sub-menu">
-                        <li><a href="#">Haiku</a></li>
-                        <li><a href="#">Sestina</a></li>
-                        <li><a href="#">Free Verse</a></li>
+                        <li><a href="Haiku.html">Haiku</a></li>
+                        <li><a href="Sestina.html">Sestina</a></li>
+                        <li><a href="freeverse.html">Free Verse</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Comedy</a></li>
+                    <li><a href="comedy.html">Comedy</a></li>
                   </ul>
                 </li>
                 <li><a href="Blog.html">Blog</a></li>
@@ -50,8 +50,6 @@
             </nav>
       
         <article>
-        </br>
-      </br>
             <h2 style="padding-top:20px;">Blog</h2>
         <h2>Post #1</h2>
             <p>As I was preparing for an interview for an internship recently, I stumbled upon this youtube video that I found to be very helpful in explaining 
@@ -60,14 +58,16 @@
             <iframe class="center" width="420" height="315"
             src="https://www.youtube.com/embed/oz9cEqFynHU">
             </iframe>
-                
+            <h2>Post #2</h2>
+            <p> I recently found this <a data-bs-toggle="tooltip" data-bs-placement="top" title="This will take you to useless website" href="https://theuselessweb.com/">Useless Website</a>. I also recently learned how to use tooltips! 
+            </p>
 
          <footer id=footer>
              <h3>Want to connect?</h3>
              <nav>
                 <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <a href="#" class="fa fa-facebook"></a>
+            <a href="" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-instagram"></a>
              </nav>
@@ -81,5 +81,9 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
          crossorigin="anonymous"></script>
+         <script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })</script>
    </body>
 </html>
